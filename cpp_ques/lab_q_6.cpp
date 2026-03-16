@@ -15,10 +15,11 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
+        sort(arr.begin(),arr.end());
     cout<<"elemnt to search"<<endl;
     cin>>k;
     int low=0;
-    int high=n-1;
+    int high=1;
     bool found=false;
     while(low<=high){
         int mid=low+(high-low)/2;
