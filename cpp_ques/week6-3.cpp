@@ -6,7 +6,7 @@ bool dfs(int node,
          vector<vector<int>>& adj,
          vector<int>& vis,
          vector<int>& path)
-{
+         {
     vis[node]=1;
     path[node]=1;
 
@@ -22,12 +22,10 @@ bool dfs(int node,
             return true;
         }
     }
-
     path[node]=0;
-
+   
     return false;
 }
-
 int main()
 {
     int n,e;
