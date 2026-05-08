@@ -18,14 +18,11 @@ int main()
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-
     vector<int> color(n,-1);
-
     queue<int> q;
-
     q.push(0);
     color[0]=0;
-
+     
     while(!q.empty())
     {
         int node=q.front();
