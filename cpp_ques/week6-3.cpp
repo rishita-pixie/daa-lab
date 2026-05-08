@@ -23,7 +23,7 @@ bool dfs(int node,
         }
     }
     path[node]=0;
-   
+
     return false;
 }
 int main()
